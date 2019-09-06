@@ -1,0 +1,12 @@
+操作系统实验7
+
+code&img文件夹内为相应的内核代码与用户程序代码
+其中ckernal.c kliba.asm myos5.asm pcb.h syscall.asm 为内核部分的代码
+user.c user.asm userlib.asm为用户程序代码
+
+fork的实现主要在pcb.h中的do_fork()函数中，通过syscall.asm中代码将它封装为21H系统调用
+
+myos#7.img本次实验的映像文件，在virtual box下测试通过，进入界面后，输入test即可进行本次实验的用户程序测试。
+
+# 由于修改了实验6的调度部分代码、修改了pcb的一些数据结构以及其它部分的各种改动，导致原先的多进程
+模型运行会出现问题。。。实验6之前的功能仍然保留。

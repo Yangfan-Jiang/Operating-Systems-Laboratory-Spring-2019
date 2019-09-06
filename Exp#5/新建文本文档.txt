@@ -1,0 +1,6 @@
+1.include的文件名不能太长，不然会报错，显示can't locate include file
+systemcall --> syscall
+cls改成系统调用会在左上角出现奇怪的字符串 忘记ret惹
+
+print相关的改成系统掉用，由于设计外部C语言的参数调用，堆栈指针不好跟踪
+很不方便，出现各种奇怪的问题（会出现乱码）所以放弃了这个想法

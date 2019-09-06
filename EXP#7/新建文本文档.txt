@@ -1,0 +1,25 @@
+.386 & .8086
+PCBrestart
+
+用户程序装载
+
+重写调度函数
+
+增加一个数据结构和select_seg函数管理段地址的使用
+
+增加状态，（5状态模型）
+
+PCB增加ID,FID,SEG，代表自己的ID，父进程ID以及占用的段地址。ID默认为在pcb列表的下标。
+
+进程空闲没有额外增加数据结构，初始化PCBlist中status为EXIT，退出后也会改为EXIT，只要找状态为EXIT的pcb就可以了
+
+将PCBrestart 改写为函数，供fork等函数执行完后调用，从内核跳回用户程序
+
+补充系统调用：用户程序调用内核过程fork，print等，需要将内核过程封装为系统调用
+
+stackcopy函数实现
+
+fork ... 的实现（返回值直接给ax赋值）
+
+# fork、wait、exit前要save_process 在写系统调用时实现，即用户在调用内核代码pcb.h的相应函数前，先将
+当前的程序PCB保存，然后再fork。

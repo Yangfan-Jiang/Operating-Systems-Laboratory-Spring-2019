@@ -1,0 +1,10 @@
+操作系统实验8
+
+code&img文件夹内为相应的内核代码与用户程序代码
+其中ckernal.c kliba.asm myos5.asm pcb.h syscall.asm 为内核部分的代码
+user.c user.asm userlib.asm为用户程序代码
+
+myos#8.img本次实验的映像文件，在virtual box下测试通过，进入界面后，输入test即可进行本次实验的用户程序测试。
+
+内核时钟中断设了一个定时器，所以用户程序运行到一定时间时，会不再执行，跳回内核
+（大约是父进程执行10次取操作后，跳回内核）
