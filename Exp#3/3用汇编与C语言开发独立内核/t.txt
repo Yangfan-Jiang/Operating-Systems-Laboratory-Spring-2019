@@ -1,4 +1,0 @@
-Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
-Error: Could not find file '/?.c'
-
-        Available memory 413754
