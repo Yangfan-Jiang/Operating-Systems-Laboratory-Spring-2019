@@ -1,5 +1,9 @@
 # Operating-Systems-Laboratory-Spring-2019
-DCS218, given by lyb
+
+The assignments of Operating System (DCS218) Spring 2019, lectured by Prof. Yingbiao Lin. 
+
+Tasks of each assignments are list as below:
+
 - Lab 1: Program on the bare machine
 - Lab 2: Load the monitor for the user program
 - Lab 3: Implement the operating system kernel using C and x86 assembly
