@@ -2,7 +2,7 @@
 
 The assignments of Operating System (DCS218) Spring 2019, lectured by Prof. Yingbiao Lin. 
 
-Tasks of each assignments are list as below:
+Contents of each assignment are listed as below:
 
 - Lab 1: Program on the bare machine
 - Lab 2: Load the monitor for the user program
